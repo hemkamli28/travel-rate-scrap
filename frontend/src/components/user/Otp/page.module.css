@@ -1,0 +1,142 @@
+/* Main Section */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin: 0;
+}
+
+/* Container Styles */
+.loginContainer {
+    width: 100%;
+    max-width: 32rem;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Titles */
+.loginTitle, .forgotPasswordTitle, .otpTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Form Styles */
+.loginForm, .forgotPasswordForm, .otpForm {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Group */
+.inputGroup {
+    margin-bottom: 1rem;
+}
+
+.label {
+    margin-bottom: 0.3125rem;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.textInput, .passwordInput {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    transition: border-color 0.3s;
+}
+
+.textInput:focus, .passwordInput:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* OTP Input Group */
+.otpInputGroup {
+    display: flex;
+    justify-content: center; /* Center the OTP inputs */
+    gap: 0.625rem; /* Add some space between OTP inputs */
+    margin-bottom: 1rem;
+}
+
+.otpInput {
+    width: 3.125rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 1.125rem;
+    transition: border-color 0.3s;
+    animation: fadeIn 0.5s ease-in-out; /* Apply the fade-in animation */
+}
+
+.otpInput:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buttons */
+.submitButton {
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}
+
+/* Error and Success Messages */
+.error {
+    margin-top: 1rem;
+    color: #d9534f;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.success {
+    margin-top: 1rem;
+    color: #5cb85c;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .loginContainer {
+        padding: 30px;
+    }
+
+    .submitButton {
+        padding: 0.625rem;
+        font-size: 0.875rem;
+    }
+
+    .textInput, .passwordInput, .otpInput {
+        padding: 0.625rem;
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,145 @@
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.loginTitle {
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #2980b9;
+  letter-spacing: 1px;
+}
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 345px;
+  background-color: #fff;
+}
+.inputGroup {
+  margin-bottom: 1rem;
+}
+.inputCheckbox {
+  display: flex;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1rem;
+  gap: 10px;
+}
+.inputGroup label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1rem;
+}
+.textInput,
+.passwordInput {
+  width: 93%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+.textInput:focus,
+.passwordInput:focus {
+  border-color: #3b71ca;
+  outline: none;
+}
+.passwordWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.passwordInput {
+  flex: 1;
+  padding-right: 40px; /* Add padding to avoid text overlap with the button */
+}
+
+.eyeButton {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.2em;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submitButton {
+  width: 100%;
+  padding: 1rem;
+  background-color: #3b71ca;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.submitButton:hover {
+  background-color: #0047ab;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(47, 90, 162, 0.3);
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.footerLinks a {
+  color: #3b71ca;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+.footerLinks a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .loginContainer {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .loginContainer {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+  .loginContainer {
+    padding: 4rem;
+  }
+}

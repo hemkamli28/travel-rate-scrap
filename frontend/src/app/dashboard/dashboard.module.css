@@ -1,0 +1,21 @@
+
+.main{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form-table{
+    width: 83%;
+ 
+  }
+  .other-table {
+   width: 100%;
+  }
+  .side-bar{
+    width: 17%;
+    
+  }
+  .sideBar{
+    width: 0;;
+  }
